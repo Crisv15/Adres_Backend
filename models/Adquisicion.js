@@ -31,7 +31,7 @@ const AdquisicionSchema = mongoose.Schema({
         trim: true
     },
     fechAd:{
-        type: Date,
+        type: String,
         trim: true,
         required: true
     },
@@ -40,7 +40,11 @@ const AdquisicionSchema = mongoose.Schema({
         trim: true,
         required: true
     },
-    documento: {
+    documentacion: {
+        type: String,
+        trim: true
+    },
+    estado: {
         type: String,
         trim: true
     }
